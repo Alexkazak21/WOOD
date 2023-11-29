@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleWood", "ConsoleWood\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EFTest", "EFTest\EFTest.csproj", "{E86075F0-1513-4954-9AA0-2DE57D78C2C6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WOODCUT", "WOODCUT\WOODCUT.csproj", "{F7B1A619-F1D9-4666-A206-95781E350F29}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{E86075F0-1513-4954-9AA0-2DE57D78C2C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E86075F0-1513-4954-9AA0-2DE57D78C2C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E86075F0-1513-4954-9AA0-2DE57D78C2C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F7B1A619-F1D9-4666-A206-95781E350F29}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7B1A619-F1D9-4666-A206-95781E350F29}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7B1A619-F1D9-4666-A206-95781E350F29}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7B1A619-F1D9-4666-A206-95781E350F29}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
