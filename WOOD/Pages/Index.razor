@@ -1,0 +1,30 @@
+﻿@page "/"
+
+<PageTitle>Index</PageTitle>
+
+<h1>Hello, world!</h1>
+
+Welcome to your new app.
+
+<SurveyPrompt Title="How is Blazor working for you?" />
+
+@using WOOD.Pages;
+
+<h2>Users</h2>
+<Test OnClickCallback="@AddNewUser"/>
+
+<ul>
+    @foreach (var user in users)
+    {
+        <li>@user</li>
+    }
+</ul>
+
+@code {
+    List<string> users = new List<string>();
+
+    void AddNewUser(string user)
+    {
+        users.Add(user);
+    }
+}

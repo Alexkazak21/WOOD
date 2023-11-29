@@ -1,0 +1,43 @@
+﻿@page "/test"
+
+<PageTitle>Wood</PageTitle>
+
+<h3>Test</h3>
+
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>FAMILY</th>
+        </tr>
+    </thead>
+    <tbody>        
+        @foreach (var user in users)
+       {
+           <tr>
+               <td>@user.Item1</td>
+               <td>@user.Item2</td>
+               <td>@user.Item3</td>
+           </tr>
+       }
+    </tbody>
+</table>
+
+<div>
+    <input type="text" @bind-value="@item" />
+    <button @onclick = "@(async() => await OnClickCallback.InvokeAsync(item))">Add</button>
+</div>
+
+@code {
+
+    public List<Tuple<string, int, bool>> users = new List<Tuple<string, int, bool>>
+    { new Tuple<string, int, bool>("Ann", 15, false),
+      new Tuple<string, int, bool>("Ani", 23, true) };
+
+    string item = "";
+
+    [Parameter]
+    public EventCallback<string> OnClickCallback { get; set; }
+
+}
