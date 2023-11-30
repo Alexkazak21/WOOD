@@ -1,4 +1,6 @@
 
+using WOODCUT.Data;
+
 namespace WOODCUT
 {
     public class Program
@@ -13,6 +15,7 @@ namespace WOODCUT
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
+            builder.Services.AddDbContext<WoodDBContext>();
 
             var app = builder.Build();
 
