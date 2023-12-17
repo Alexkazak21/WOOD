@@ -12,8 +12,8 @@ using WoodWebAPI.Auth;
 namespace WoodWebAPI.Migrations.ApplicationDb
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20231212074157_Identity")]
-    partial class Identity
+    [Migration("20231217192114_application")]
+    partial class application
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

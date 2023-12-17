@@ -49,7 +49,7 @@ namespace WoodWebAPI.Services
 
         public async Task<ExecResultModel> DeleteAsync(DeleteCustomerDTO model)
         {
-            var data = _db.Customers.Where(x => x.TelegramID == model.TelegramId).First();
+            var data = await _db.Customers.Where(x => x.TelegramID == model.TelegramId).FirstAsync();
 
             if( data != null ) 
             {

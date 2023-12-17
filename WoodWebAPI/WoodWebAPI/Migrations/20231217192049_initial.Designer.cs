@@ -12,8 +12,8 @@ using WoodWebAPI.Data;
 namespace WoodWebAPI.Migrations
 {
     [DbContext(typeof(WoodDBContext))]
-    [Migration("20231212124756_Initial")]
-    partial class Initial
+    [Migration("20231217192049_initial")]
+    partial class initial
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
