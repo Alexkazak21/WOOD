@@ -14,7 +14,7 @@ namespace TelegramBotWood.TelegramBot
         public void Run()
         {
             //test conn zone
-            var botToken = "5213388416:AAGSxvbVI9Hd1XiLxBV-cepybFnguamVTPk";
+            var botToken = "your TElegtamBot API Token";
             var api = new BotClient(botToken);
             var consumeMethods = new ConsumeEventSync();
 
